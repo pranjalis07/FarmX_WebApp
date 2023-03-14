@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <link rel="stylesheet" href="MainCss.css">
+    </head>
+    <body>
+         <script> 
+            function getInputValue(){
+            // Selecting the input element and get its value 
+            var inputVal = document.getElementById("username").value;
+            localStorage.setItem("user",inputVal);
+        }
+        </script>
+
+        <div class="logBox">
+            <div class='logForm'>
+                
+                <form class="login" action="adminLoginJSP.jsp">
+                
+                    <div class="title">Login</div>
+            
+                    <span>Username</span>
+                    <input type="text" id="username" name="uname" placeholder="Enter Username" required>
+
+                    <span>Password</span>
+                    <input type="password" name="password" placeholder="Enter Password" required>
+                        
+                    <button onclick="getInputValue()">Sign In</button>
+                    
+                </form>
+            
+                <div class="sidePanel" >
+                    <div class="blurred">
+                        <h2>MARK-82</h2>
+                        <h3>Welcome to SMART AGRICULTURE. Please Login to continue</h3>
+                        <div class="createAcc">
+                            <span>Didn't have an account?</span>
+                            <br><a href='adminRegister.html' style='color:#FF954E; font-weight:800;  text-decoration: none;'>Create account</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+    </body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <link rel="stylesheet" href="MainCss.css">
+    </head>
+    <body>
+        <div class="registerForm">
+            <div class="title">Create account</div>
+            
+            <form action="registerContracter" onSubmit="return matchPassword()" method="post">
+                    <div class='registerBox'>
+                    
+                        <div class='inputBox'>
+                            <span>Company Name</span>
+                            <input type="text" placeholder="Enter your company name" name="name" required>
+                        </div>
+
+                        <div class='inputBox'>
+                            <span>Email Id</span>
+                            <input type="text" id="emailBox" name="email" placeholder="Enter Email Id"   >
+                        </div>
+
+                        <div class='inputBox'>
+                            <span>Contact No.</span>
+                            <input type="text" placeholder="Enter mobile number" name="phone" required>
+                        </div>
+                        
+                       
+                        <div class='inputBox'>
+                            <span>Location</span>
+                            <input type="text" name="location" placeholder="Enter comapny location " required>
+                        </div>
+                        
+                        <div class='inputBox'>
+                            <span>Specify Requirements</span>
+                            <input type="text" name="require" placeholder="Enter crop details" required>
+                        </div>
+                        
+                        <div class='inputBox'>
+                            <span>quantity </span>
+                            <input type="text" name="quantity" placeholder="Enter required quantity" required>
+                        </div>
+                        
+                        <div class='inputBox'>
+                            <span>Username</span>
+                            <input type="text" name="username" placeholder="Enter username" required>
+                        </div>
+                        
+                        <div class='inputBox'>
+                            <span>Password</span>
+                            <input type="password" id="pass" name="password" placeholder="Enter password" required>
+                        </div>
+                        
+                        <div class='inputBox'>
+                            <span>Confirm Password</span>
+                            <input type="password" id="repass" name="repassword" placeholder="Confirm password" required>
+                        </div>
+                    
+                        <button >Sign Up</button>
+                </form>
+    </body>
+</html>

@@ -1,0 +1,348 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 29 Nov, 2022, 6:49:29 PM
+    Author     : shreyas
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: auto;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+
+body{
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding:15px 20px 15px 20px;
+    background-color: #fff;
+    background-image: url("https://img.freepik.com/premium-vector/vector-illustration-agriculture-farming-agribusiness-rural-landscape-with-farm-tractor_449384-64.jpg?w=2000");
+   
+   /*background-image: url("https://img.freepik.com/premium-photo/beautiful-green-cornfield-with-sunset-sky_29332-1559.jpg?w=740");
+   */background-attachment: fixed;
+    background-size: cover;
+}
+
+
+/*--------------------------------------MainPage----------------------------*/
+
+.Home{
+    margin-top: 5%;
+    margin-right: 3%;
+    padding: 40px ;
+    width: calc(60% + 100px);
+    float: right;
+    text-align: right;
+    justify-content: space-between;    
+    background-color:rgba(255,255,255, 0.15);
+    box-shadow: 0 0 5px 10px rgba(0,0,0,0.15);    
+    backdrop-filter:blur(25px);
+    border-radius: 20px;
+}
+
+.Home h1{  
+    color: #fff;
+    margin-top: -30px;
+    font-size: 160px;
+}
+
+.Home h2{
+    font-size: 50px;
+    color: #fff;
+}
+
+.Home h3{
+    margin-top: -30px;
+    float: right;
+    width: 700px;
+    font-size:16px;
+    text-align: right;
+    color: #fff;
+}
+
+.Home button{
+    float: right;
+    margin-top: 30px;
+    margin-bottom: 40px;    
+    font-size: 18px;
+    width: 25%;
+    font-weight: 700;
+    padding: 10px 30px;
+    text-decoration: none;
+    border: 1px solid transparent;
+    background: linear-gradient(220deg, #f2276a, #e47721);
+    color: #fff;
+    transition: width 2s;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 2px #fff;
+}
+
+.Home button:hover{
+    box-shadow: 0 0 30px 3px #fff;
+    width: 30%;
+}
+
+
+/*------------------------------------Login Page-----------------------------*/
+.logBox{
+    margin-top:4%;
+    width: 60%;
+    height: 80%;
+    border-radius:30px;
+    background-color:rgba(255,255,255, 1);
+    backdrop-filter:blur(10px);
+    box-shadow: 0 5px 20px rgba(255,255,255,0.55);
+}
+.logForm{
+    display: flex;  
+    height:  100%;
+    justify-content: space-between;
+}
+
+.login{
+    padding: 20px;
+    padding-left: 30px;
+    width: calc(100% / 2 - 50px );
+}
+
+.sidePanel{
+    float: right;
+    height: 100%;
+    width: 50%;
+    padding:40px;
+    margin-left: 50px;
+    border-radius: 30px;
+    background-color: #FF2572;
+    /*background-image: url("https://w0.peakpx.com/wallpaper/358/305/HD-wallpaper-lamp-posts-night-lighting-dark.jpg");*/
+    background-image: url("https://w0.peakpx.com/wallpaper/205/267/HD-wallpaper-lamp-post-road-sky.jpg");
+    background-attachment: local;
+    background-size: cover;
+}
+.blurred{
+    width: 100%;
+    padding: 30px;
+    height: 100%;
+    border-radius: 10px;
+    background-color:rgba(0,0,0, 0.1);
+    backdrop-filter:blur(1px);
+    
+}
+.logBox .title{
+    margin-top: -80px;
+    font-size: 60px;
+    font-weight: 800;
+    color:#FF2572;
+    margin-bottom: 10px;    
+    position: relative;
+}
+.sidePanel h2{
+    margin-top:5px;
+    font-size: 35px;
+    color: #fff ;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+/*-------------------------------------Sign Up page--------------------------------*/
+.signUpBox{
+    margin-top:4%;
+    width: 60%;
+    height: 80%;
+    border-radius:30px;
+    background-color:rgba(255,255,255, 1);
+    backdrop-filter:blur(10px);
+    box-shadow: 0 5px 20px rgba(255,255,255,0.55);
+}
+.signUpForm{
+    display: flex;  
+    height:  100%;
+    justify-content: space-between;
+}
+
+.signup{
+    padding: 20px;
+    padding-left: 30px;
+    width: calc(100% / 2 - 50px );
+}
+
+.Register_sidePanel{
+    float: right;
+    height: 100%;
+    width: 50%;
+    padding:40px;
+    margin-left: 50px;
+    border-radius: 30px;
+    background-color: #FF2572;
+    background-image: url("https://w0.peakpx.com/wallpaper/358/305/HD-wallpaper-lamp-posts-night-lighting-dark.jpg");
+    /*background-image: url("https://w0.peakpx.com/wallpaper/205/267/HD-wallpaper-lamp-post-road-sky.jpg");*/
+    background-attachment: local;
+    background-size: cover;
+}
+.blurred{
+    width: 100%;
+    padding: 30px;
+    height: 100%;
+    border-radius: 10px;
+    background-color:rgba(0,0,0, 0.1);
+    backdrop-filter:blur(1px);
+}
+.signUpBox .title{
+    margin-top: -40px;
+    font-size: 60px;
+    font-weight: 800;
+    color:#FF2572;
+    margin-bottom: 10px;    
+    position: relative;
+}
+.Register_sidePanel h2{
+    margin-top:5px;
+    font-size: 35px;
+    color: #fff ;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+/*------------------------------------Register Page----------------------------*/
+.registerForm{
+    margin-top: 3%;
+    width:80%;
+    background-color: rgba(255,255,255,0.9);
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+}
+
+.registerForm .title{
+    font-size: 60px;
+    font-weight: 800;
+    color:#FF2572;
+    margin-bottom: 10px;    
+    position: relative;
+}
+
+.registerBox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.registerBox .inputBox{
+    display: block;
+    margin-bottom: 5px;
+    width: calc(100% / 3 - 20px);
+}
+
+
+
+/*---------------------------- Inputs----------------------*/
+input[type=text],[type=password],[type=date]{
+    width: 100%;
+    padding: 12px 20px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    background-color: transparent;
+    font-size: 14px;
+    display: inline-block;
+    border: 1px solid #000  ;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.radioButton{
+    width: 100%;
+    padding: 12px 15px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.radioButton input{
+    margin-left: 30px;
+}
+
+select {
+  background-color: transparent;
+  border: 2px solid #000;
+  width: 100%;
+  font-size: 15px;
+  padding: 12px 20px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #000;
+  border-radius: 4px;
+}
+
+span{
+    margin-top:1px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+button{
+    margin-top: 30px;
+    font-size: 18px;
+    width: 100%;
+    font-weight: 700;
+    padding: 10px 30px;
+    text-decoration: none;
+    border: 1px solid transparent;
+    background: linear-gradient(220deg, #FF2572, #FF954E);
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 2px #fff;
+}
+.blurred h3{
+    color: #fff;
+    font-size: 15px;
+}
+.createAcc{
+    margin-top: 70%;
+    color: #fff;
+}
+
+/*-----------------------------govSchemes.jsp---------------------*/
+.gov{
+    background-color: "pink";
+}
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.accordion:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}

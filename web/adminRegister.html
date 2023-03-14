@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <link rel="stylesheet" href="MainCss.css">
+          <script>
+            function matchPassword() {  
+                var pw1 = document.getElementById("pass").value;  
+                var pw2 = document.getElementById("repass").value;  
+                if(pw1 != pw2)  
+                { 
+                    alert("Passwords did not match");
+                    return false;  
+                } 
+                else{
+                    alert("User Registered Successfully")
+                    return true;
+                }
+            }  
+        </script> 
+    </head>
+
+     
+    <body>
+        <div class="registerForm">
+            <div class="title">Create account</div>
+            
+                <form action="registerAdmin" onSubmit="return matchPassword()">
+                    <div class='registerBox'>
+                    
+                        <div class='inputBox'>
+                            <span>Full Name</span>
+                            <input type="text" placeholder="Enter your name" name="name" required>
+                        </div>
+
+                        <div class='inputBox'>
+                            <span>Email Id</span>
+                            <input type="text" id="emailBox" name="email" placeholder="Enter Email Id"   >
+                        </div>
+
+                        <div class='inputBox'>
+                            <span>Phone No.</span>
+                            <input type="text" placeholder="Enter mobile number" name="phone" required>
+                        </div>
+                        
+                       
+                        <div class='inputBox'>
+                            <span>House No./Street/Landmark</span>
+                            <input type="text" name="street" placeholder="Enter streeet/landmark" required>
+                        </div>
+                        
+                        <div class='inputBox'>
+                            <span>City/Town</span>
+                            <input type="text" name="city" placeholder="Enter city/town" required>
+                        </div>
+                        
+                        <div class='inputBox'>
+                            <span>Pin Code</span>
+                            <input type="text" name="pincode" placeholder="Enter pin code" required>
+                        </div>
+                        
+                        <div class='inputBox'>
+                            <span>Username</span>
+                            <input type="text" name="username" placeholder="Enter username" required>
+                        </div>
+                        
+                        <div class='inputBox'>
+                            <span>Password</span>
+                            <input type="password" id="pass" name="password" placeholder="Enter password" required>
+                        </div>
+                        
+                        <div class='inputBox'>
+                            <span>Confirm Password</span>
+                            <input type="password" id="repass" name="repassword" placeholder="Confirm password" required>
+                        </div>
+                    
+                        <button >Sign Up</button>
+                </form>
+         
+    </body>
+</html>
