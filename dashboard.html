@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>FarmX</title>
+    <link rel="icon" href="index.html" type="image/x-icon" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <!-- Google Fonts Roboto -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" />
+    <!-- MDB -->
+    <link rel="stylesheet" href="css/mdb.min.css" />
+
+    <style>
+        .gradient-custom {
+            /* fallback for old browsers */
+            background: #ffffff;
+
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: -webkit-linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 236, 210, 1));
+
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 236, 210, 1))
+        }
+
+        .carousel-indicators li {
+            background-color: #282828;
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+        }
+
+        .active {
+            color: #282828;
+        }
+
+        #google_translate_element select {
+            box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
+            border: none;
+            border-radius: 3px;
+            margin-right: 15px;
+            padding: 6px 8px
+        }
+
+        .goog-logo-link {
+            display: none !important;
+        }
+
+        .goog-te-banner-frame {
+            display: none !important;
+        }
+
+        #goog-gt-tt,
+        .goog-te-balloon-frame {
+            display: none !important;
+        }
+
+        .goog-text-highlight {
+            background: none !important;
+            box-shadow: none !important;
+        }
+    </style>
+
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({ pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.VERTICAL }, 'google_translate_element');
+        }
+    </script>
+
+    <script type="text/javascript"
+        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</head>
+
+<body>
+    <!-- Start your project here-->
+
+
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <!-- Container wrapper -->
+            <div class="container-fluid">
+                <!-- Toggle button -->
+                <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+                    data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+
+                <!-- Collapsible wrapper -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <!-- Navbar brand -->
+                    <a class="navbar-brand mt-2 mt-lg-0" href="/dashboard.html">
+                        <img src="img/logo.png" height="50" alt="FarmX" loading="lazy" />
+                    </a>
+                    <!-- Left links -->
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item ">
+                            <a class="nav-link active" href="/dashboard.html">Dashboard</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Market</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/schemes.html">Schemes</a>
+                        </li>
+                    </ul>
+                    <!-- Left links -->
+                </div>
+                <!-- Collapsible wrapper -->
+
+                <!-- Right elements -->
+                <div class="d-flex align-items-center">
+                    <!-- Icon -->
+                    <div id="google_translate_element" ></div>
+
+                    <a class="text-reset me-3" href="#">
+                        <i class="fas fa-shopping-cart fs-5"></i>
+                    </a>
+
+                    <!-- Notifications -->
+                    <div class="dropdown">
+                        <a class="text-reset me-3 dropdown-toggle hidden-arrow" href="#" id="navbarDropdownMenuLink"
+                            role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-bell"></i>
+                            <span class="badge rounded-pill badge-notification bg-danger">1</span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
+                            <li>
+                                <a class="dropdown-item" href="#">Some news</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Another news</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Avatar -->
+                    <div class="dropdown mx-3">
+                        <a class="dropdown-toggle d-flex align-items-center hidden-arrow" href="#"
+                            id="navbarDropdownMenuAvatar" role="button" data-mdb-toggle="dropdown" aria-expanded="true">
+                            <img src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp" class="rounded-circle"
+                                height="35" alt="Black and White Portrait of a Man" loading="lazy" />
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuAvatar">
+                            <li>
+                                <a class="dropdown-item" href="#">My profile</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Settings</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Logout</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Right elements -->
+            </div>
+            <!-- Container wrapper -->
+        </nav>
+        <!-- Navbar -->
+    </header>
+
+    <!-- Weather -->
+    <section id="what-we-do" class="what-we-do p-2 " style="background-color: #ECEFF1;">
+        <div class="container">
+
+            <div class="text-start p-2">
+                <h2 class="fw-bolder fs-1 ">
+                    Weather information</h2>
+                <hr class="hr hr-blurry" />
+                <p></p>
+            </div>
+
+            <div class="row mt-4">
+                <div class="col-lg-2 col-md-6 d-flex flex-fill m-2 hover-overlay ripple"
+                    data-mdb-ripple-color="#d6f0e0">
+                    <div class="card mb-4 flex-fill gradient-custom" style="border-radius: 25px;">
+                        <div class="card-body p-4">
+
+                            <div id="demo1" class="carousel slide" data-ride="carousel">
+                                <!-- Indicators -->
+                                <ul class="carousel-indicators mb-0">
+                                    <li data-target="#demo1" data-slide-to="0" class="active"></li>
+                                    <li data-target="#demo1" data-slide-to="1"></li>
+                                    <li data-target="#demo1" data-slide-to="2"></li>
+                                </ul>
+                                <!-- Carousel inner -->
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <div class="d-flex justify-content-between mb-4 pb-2">
+                                            <div>
+                                                <h2 class="display-2"><strong>23°C</strong></h2>
+                                                <p class="text-muted mb-0">Coimbra, Portugal</p>
+                                            </div>
+                                            <div>
+                                                <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-weather/ilu3.webp"
+                                                    width="150px">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="  col-lg-2 col-md-6 d-flex flex-fill m-2 hover-overlay ripple"
+                    data-mdb-ripple-color="#d6f0e0">
+                    <div class="card mb-4 flex-fill" style="border-radius: 25px;">
+                        <div class="card-body p-4">
+
+                            <div id="demo2" class="carousel slide" data-ride="carousel">
+                                <!-- Indicators -->
+                                <ul class="carousel-indicators mb-0">
+                                    <li data-target="#demo2" data-slide-to="0"></li>
+                                    <li data-target="#demo2" data-slide-to="1" class="active"></li>
+                                    <li data-target="#demo2" data-slide-to="2"></li>
+                                </ul>
+                                <!-- Carousel inner -->
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <div class="d-flex justify-content-around text-center mb-4 pb-3 pt-2">
+                                            <div class="flex-column">
+                                                <p class="small"><strong>21°C</strong></p>
+                                                <i class="fas fa-sun fa-2x mb-3" style="color: #ddd;"></i>
+                                                <p class="mb-0"><strong>12:00</strong></p>
+                                                <p class="mb-0 text-muted" style="font-size: .65rem;">PM</p>
+                                            </div>
+                                            <div class="flex-column">
+                                                <p class="small"><strong>2°C</strong></p>
+                                                <i class="fas fa-sun fa-2x mb-3" style="color: #ddd;"></i>
+                                                <p class="mb-0"><strong>1:00</strong></p>
+                                                <p class="mb-0 text-muted" style="font-size: .65rem;">PM</p>
+                                            </div>
+                                            <div class="flex-column">
+                                                <p class="small"><strong>20°C</strong></p>
+                                                <i class="fas fa-cloud fa-2x mb-3" style="color: #ddd;"></i>
+                                                <p class="mb-0"><strong>2:00</strong></p>
+                                                <p class="mb-0 text-muted" style="font-size: .65rem;">PM</p>
+                                            </div>
+                                            <div class="flex-column">
+                                                <p class="small"><strong>19°C</strong></p>
+                                                <i class="fas fa-cloud fa-2x mb-3" style="color: #ddd;"></i>
+                                                <p class="mb-0"><strong>3:00</strong></p>
+                                                <p class="mb-0 text-muted" style="font-size: .65rem;">PM</p>
+                                            </div>
+                                            <div class="flex-column">
+                                                <p class="small"><strong>18°C</strong></p>
+                                                <i class="fas fa-cloud-showers-heavy fa-2x mb-3"
+                                                    style="color: #ddd;"></i>
+                                                <p class="mb-0"><strong>4:00</strong></p>
+                                                <p class="mb-0 text-muted" style="font-size: .65rem;">PM</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 d-flex flex-fill m-2 hover-overlay ripple"
+                    data-mdb-ripple-color="#d6f0e0">
+                    <div class="card flex-fill mb-4" style="border-radius: 25px;">
+                        <div class="card-body p-4">
+
+                            <div id="demo3" class="carousel slide" data-ride="carousel">
+                                <!-- Indicators -->
+                                <ul class="carousel-indicators mb-0">
+                                    <li data-target="#demo3" data-slide-to="0"></li>
+                                    <li data-target="#demo3" data-slide-to="1"></li>
+                                    <li data-target="#demo3" data-slide-to="2" class="active"></li>
+                                </ul>
+                                <!-- Carousel inner -->
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <div class="d-flex justify-content-around text-center mb-4 pb-3 pt-2">
+                                            <div class="flex-column">
+                                                <p class="small"><strong>21°C</strong></p>
+                                                <i class="fas fa-sun fa-2x mb-3" style="color: #ddd;"></i>
+                                                <p class="mb-0"><strong>Mon</strong></p>
+                                            </div>
+                                            <div class="flex-column">
+                                                <p class="small"><strong>20°C</strong></p>
+                                                <i class="fas fa-sun fa-2x mb-3" style="color: #ddd;"></i>
+                                                <p class="mb-0"><strong>Tue</strong></p>
+                                            </div>
+                                            <div class="flex-column">
+                                                <p class="small"><strong>16°C</strong></p>
+                                                <i class="fas fa-cloud fa-2x mb-3" style="color: #ddd;"></i>
+                                                <p class="mb-0"><strong>Wed</strong></p>
+                                            </div>
+                                            <div class="flex-column">
+                                                <p class="small"><strong>17°C</strong></p>
+                                                <i class="fas fa-cloud fa-2x mb-3" style="color: #ddd;"></i>
+                                                <p class="mb-0"><strong>Thu</strong></p>
+                                            </div>
+                                            <div class="flex-column">
+                                                <p class="small"><strong>18°C</strong></p>
+                                                <i class="fas fa-cloud-showers-heavy fa-2x mb-3"
+                                                    style="color: #ddd;"></i>
+                                                <p class="mb-0"><strong>Fri</strong></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+                <a class class="btn btn-success me-3" href="/weather.html">See full report</a>
+            </div>
+        </div>
+    </section>
+    <!-- /Weather -->
+
+
+
+
+
+
+
+
+    <!-- Contact Us -->
+    <div class="mt-5">
+        <!-- Footer -->
+        <footer class="text-center text-lg-start text-dark" style="background-color: #ECEFF1">
+            <!-- Section: Social media -->
+            <section class="d-flex justify-content-between p-4 text-white bg-success">
+                <!-- Left -->
+                <div class="me-5">
+                    <span>Get connected with us on social networks:</span>
+                </div>
+                <!-- Left -->
+
+                <!-- Right -->
+                <div>
+                    <a href="" class="text-white me-4">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="" class="text-white me-4">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="" class="text-white me-4">
+                        <i class="fab fa-google"></i>
+                    </a>
+                    <a href="" class="text-white me-4">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="" class="text-white me-4">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="" class="text-white me-4">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+                <!-- Right -->
+            </section>
+            <!-- Section: Social media -->
+
+            <!-- Section: Links  -->
+            <section class="">
+                <div class="container text-center text-md-start mt-5">
+                    <!-- Grid row -->
+                    <div class="row mt-3">
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                            <!-- Content -->
+                            <h6 class="text-uppercase fw-bold">FarmX</h6>
+                            <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                                style="width: 60px; background-color: #7c4dff; height: 2px" />
+                            <p>
+                                FarmX is a revolutionary platform designed to empower farmers and
+                                increase the efficiency of the agricultural supply chain.
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold">Company</h6>
+                            <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                                style="width: 60px; background-color: #7c4dff; height: 2px" />
+                            <p>
+                                <a href="#!" class="text-dark">Our Team</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-dark">Terms of Service</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-dark">Privacy Policy</a>
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold">Useful links</h6>
+                            <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                                style="width: 60px; background-color: #7c4dff; height: 2px" />
+                            <p>
+                                <a href="#!" class="text-dark">Your Account</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-dark">About Us</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-dark">Help Center</a>
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold">Contact</h6>
+                            <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                                style="width: 60px; background-color: #7c4dff; height: 2px" />
+                            <p><i class="fas fa-home mr-3"></i> Kolhapur, Maharashtra</p>
+                            <p><i class="fas fa-envelope mr-3"></i> mail@farmx.com</p>
+                            <p><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+                            <p><i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+                        </div>
+                        <!-- Grid column -->
+                    </div>
+                    <!-- Grid row -->
+                </div>
+            </section>
+            <!-- Section: Links  -->
+
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+                © 2023 Copyright:
+                <a class="text-dark" href="https://mdbootstrap.com/">Farmx.com</a>
+            </div>
+            <!-- Copyright -->
+        </footer>
+        <!-- Footer -->
+    </div>
+    <!-- /Contact Us -->
+
+    <!-- End your project here-->
+
+    <!-- MDB -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- Custom scripts -->
+    <script type="text/javascript"></script>
+</body>
+
+</html>
